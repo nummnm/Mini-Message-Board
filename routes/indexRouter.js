@@ -26,7 +26,6 @@ router.get("/new", (req, res) => {
 });
 
 router.post("/new", (req, res) => {
-  res.send("POST request received!");
   messages.push({ 
     text: req.body.text, 
     user: req.body.author, 
